@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Login | Truck Dispatch Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-card {
+            background: white;
+            border-radius: 24px;
+            padding: 50px 40px;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+            animation: fadeInUp 0.6s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login-logo i {
+            font-size: 3.5rem;
+            color: #e94560;
+        }
+
+        .login-logo h2 {
+            font-size: 1.8rem;
+            margin-top: 10px;
+            color: #1a1a2e;
+        }
+
+        .login-logo span {
+            color: #e94560;
+        }
+
+        .login-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login-title h3 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin-bottom: 5px;
+        }
+
+        .login-title p {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #1a1a2e;
+        }
+
+        .input-group label i {
+            color: #e94560;
+            margin-right: 8px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #e94560;
+            box-shadow: 0 0 0 3px rgba(233,69,96,0.1);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(233,69,96,0.4);
+        }
+
+        .login-footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .login-footer a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .demo-credentials {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 20px;
+            font-size: 0.85rem;
+        }
+
+        .demo-credentials p {
+            margin: 5px 0;
+            color: #6c757d;
+        }
+
+        .demo-credentials strong {
+            color: #e94560;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            .login-card {
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-logo">
+                <i class="fas fa-truck-fast"></i>
+                <h2>Truck<span>Dispatch</span> Pro</h2>
+            </div>
+            
+            <div class="login-title">
+                <h3>Driver Login</h3>
+                <p>Access your dashboard to manage loads and payments</p>
+            </div>
+            
+            <div id="errorMsg" class="error-message"></div>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Login to Dashboard
+                </button>
+            </form>
+            
+            <div class="demo-credentials">
+                <p><strong>📝 Demo Credentials (Try These):</strong></p>
+                <p>📧 Email: <strong>driver@truckdispatch.com</strong></p>
+                <p>🔒 Password: <strong>password123</strong></p>
+                <p style="font-size: 0.7rem; margin-top: 8px;">⚠️ Use these credentials to test the dashboard</p>
+            </div>
+            
+            <div class="login-footer">
+                <p>Don't have an account? <a href="register.html">Register as Driver</a></p>
+                <p style="margin-top: 10px;"><a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Login Form Handler
+        const loginForm = document.getElementById('loginForm');
+        const errorMsg = document.getElementById('errorMsg');
+        
+        if (loginForm) {
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = document.getElementById('loginEmail').value.trim();
+                const password = document.getElementById('loginPassword').value;
+                
+                // Demo credentials check
+                if (email === 'driver@truckdispatch.com' && password === 'password123') {
+                    // Save user data to localStorage
+                    const userData = {
+                        name: "ZAINAB.....",
+                        email: email,
+                        activeLoads: 2,
+                        weeklyEarnings: 3250,
+                        rating: 4.9
+                    };
+                    localStorage.setItem('loggedInUser', JSON.stringify(userData));
+                    
+                    // Redirect to welcome page
+                    window.location.href = 'welcome.html';
+                } else {
+                    errorMsg.textContent = '❌ Invalid email or password. Try: driver@truckdispatch.com / password123';
+                    errorMsg.style.display = 'block';
+                    
+                    // Hide error after 3 seconds
+                    setTimeout(() => {
+                        errorMsg.style.display = 'none';
+                    }, 3000);
+                }
+            });
+        }
+        
+        // Check if already logged in
+        if (localStorage.getItem('loggedInUser')) {
+            // Optional: Auto redirect to dashboard if already logged in
+            // window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html>

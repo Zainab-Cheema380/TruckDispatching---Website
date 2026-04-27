@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional truck dispatching services - 24/7 load booking, route optimization, and driver support. Maximize your earnings with our expert team.">
+    <title>Truck Dispatch  Pro | Professional Truck Dispatching Services</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* ==================== TOP ANIMATION BAR ==================== */
+        .top-animation-bar {
+            background: linear-gradient(90deg, #9b59b6, #667eea, #9b59b6);
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            position: relative;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .marquee-content i {
+            margin: 0 15px;
+            color: #ffd700;
+        }
+        
+        .top-animation-bar:hover .marquee-content {
+            animation-play-state: paused;
+        }
+        
+        /* Animated Text Style */
+        .hero-badge {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        /* New Company Name Style */
+        .company-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        
+        .company-name i {
+            color: #9b59b6;
+        }
+        
+        .company-name span {
+            background: linear-gradient(135deg, #9b59b6, #667eea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== TOP ANIMATION BAR (NEW) ==================== -->
+    <div class="top-animation-bar">
+        <div class="marquee-content">
+            <i class="fas fa-truck"></i> 🚛 SPECIAL OFFER: First Month FREE for New Drivers! 
+            <i class="fas fa-star"></i> ⭐ Highest Paying Loads Guaranteed - $2.80+/mile 
+            <i class="fas fa-clock"></i> ⏰ 24/7 Dispatch Support Available Now! 
+            <i class="fas fa-dollar-sign"></i> 💰 Weekly Payments - Get Paid Every Friday! 
+            <i class="fas fa-headset"></i> 📞 Call Now: (888) 555-0123
+        </div>
+    </div>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-truck-fast"></i>
+                <span>Truck<span class="highlight">Dispatch</span>Pro</span>
+            </div>
+        
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+                <li><a href="register.html" class="nav-btn">Driver Register</a></li>
+            </ul>
+
+            <div class="theme-toggle-header">
+                <button class="theme-toggle-btn-header" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>Trusted by 1000+ Drivers Nationwide</span>
+                </div>
+                <h1 class="hero-title">
+                    Your Success <span class="gradient-text">Starts Here</span>
+                </h1>
+                
+                <!-- Professional Quote / Tagline -->
+                <div class="animated-text">
+                    <i class="fas fa-quote-left"></i> "Where Every Mile Counts, Every Driver Matters" <i class="fas fa-quote-right"></i>
+                </div>
+                
+                <p class="hero-subtitle">
+                    We don't just dispatch loads — we build partnerships. Join Elite Dispatch and experience higher earnings, 24/7 support, and complete peace of mind on the road.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="location.href='register.html'">
+                        <i class="fas fa-user-plus"></i> Join Elite Dispatch
+                    </button>
+                    <button class="btn btn-secondary" onclick="location.href='contact.html'">
+                        <i class="fas fa-quote-right"></i> Get Free Consultation
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><h3>1000+</h3><p>Active Drivers</p></div>
+                    <div class="stat"><h3>25K+</h3><p>Loads Dispatched</p></div>
+                    <div class="stat"><h3>99%</h3><p>Satisfaction Rate</p></div>
+                    <div class="stat"><h3>24/7</h3><p>Support</p></div>
+                </div>
+            </div>
+        </div>
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/2103099/2103099-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Elite Dispatch</span>
+                <h2>We Put <span class="highlight">Drivers First</span></h2>
+                <p>Join hundreds of successful owner-operators who have transformed their trucking business with us</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Live Dispatch Support</h3>
+                    <p>Round-the-clock assistance from experienced dispatchers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Premium Rate Negotiation</h3>
+                    <p>Average $2.80+ per mile for our drivers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Same-Week Payments</h3>
+                    <p>Get paid within 3-5 days with our fast factoring</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-route"></i></div>
+                    <h3>Smart Route Planning</h3>
+                    <p>Minimize empty miles and maximize profits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Simple Process</span>
+                <h2>Get Started in <span class="highlight">3 Easy Steps</span></h2>
+                <p>From registration to your first load in under 24 hours</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fas fa-file-signature"></i></div>
+                    <h3>Sign Up Free</h3>
+                    <p>Complete our simple registration form with your truck details</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fas fa-search-dollar"></i></div>
+                    <h3>Get Matched Instantly</h3>
+                    <p>Our AI system finds the highest paying loads for your route</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Drive & Earn More</h3>
+                    <p>Accept loads, deliver safely, and watch your revenue grow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES PREVIEW ==================== -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2>Our <span class="highlight">Premium Services</span></h2>
+                <p>Comprehensive dispatch solutions for every truck type</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-truck-loading"></i>
+                    <h3>Load Booking</h3>
+                    <p>Premium loads from DAT, Truckstop & direct shippers</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Rate Negotiation</h3>
+                    <p>Get $2.80+ per mile average rates</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>GPS Tracking</h3>
+                    <p>Real-time load tracking for peace of mind</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Paperwork</h3>
+                    <p>Complete documentation & invoice management</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-outline" onclick="location.href='services.html'">
+                    View All Services <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Driver Reviews</span>
+                <h2>What Our <span class="highlight">Drivers Say</span></h2>
+                <p>Real stories from real truckers who made the switch</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Best decision I ever made! My weekly revenue increased by 50% in just 2 months. The team finds loads I never thought possible."</p>
+                    <h4>Mike Johnson</h4>
+                    <p>Owner Operator, 12 years experience</p>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"24/7 support is a game changer. Had an issue at 2 AM and they resolved it in 10 minutes. Highly recommend Elite Dispatch!"</p>
+                    <h4>Sarah Williams</h4>
+                    <p>Fleet Owner, 8 trucks</p>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Switched from my old dispatcher and never looked back. Their rate negotiation skills are unmatched. Best in the business!"</p>
+                    <h4>David Chen</h4>
+                    <p>Independent Driver</p>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Take Your Earnings to the Next Level?</h2>
+                <p>Join 1000+ successful drivers who have increased their revenue by 40-60% with Elite Dispatch</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="location.href='register.html'">
+                        Register Your Truck <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline-white" onclick="location.href='contact.html'">
+                        Schedule a Call
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER SECTION ==================== -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>📧 Get Load Updates Weekly</h3>
+                <p>Subscribe to receive the best load opportunities in your area</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRUST BADGES ==================== -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges-container">
+                <div class="badge"><i class="fas fa-shield-alt"></i><span>100% Secure & Safe</span></div>
+                <div class="badge"><i class="fas fa-lock"></i><span>Data Protected</span></div>
+                <div class="badge"><i class="fas fa-credit-card"></i><span>Fast Payments</span></div>
+                <div class="badge"><i class="fas fa-certificate"></i><span>Licensed & Insured</span></div>
+                <div class="badge"><i class="fas fa-star"></i><span>4.9/5 Driver Rating</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo"><i class="fas fa-truck-fast"></i><span>Truck<span>Dispatch</span>Pro</span></div>
+                    <p>Professional truck dispatching services helping owner-operators maximize revenue with highest paying loads across USA.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/people/Elite-Dispatch/61573088123456/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/EliteDispatch" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/elite-dispatch" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/elite.dispatch/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Driver Resources</h4>
+                    <ul>
+                        <li><a href="register.html">Driver Registration</a></li>
+                        <li><a href="login.html">Driver Login</a></li>
+                        <li><a href="#">Load Board</a></li>
+                        <li><a href="#">Rate Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (888) 555-0123</li>
+                        <li><i class="fas fa-envelope"></i> support@elitedispatch.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Available</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dallas, Texas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elite Dispatch. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING BUTTONS ==================== -->
+    <div class="floating-buttons">
+        <div class="floating-btn btn-call" onclick="window.location.href='tel:+18885550123'">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="floating-btn btn-email" onclick="window.location.href='contact.html'">
+            <i class="fas fa-envelope"></i>
+        </div>
+    </div>
+
+    <!-- ==================== COOKIE CONSENT ==================== -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-text"><p>🍪 We use cookies to improve your experience.</p></div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accept</button>
+            <button class="cookie-btn cookie-decline" onclick="declineCookies()">Decline</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <!-- ==================== AI CHATBOT WIDGET ==================== -->
+    <div class="ai-chatbot" id="aiChatbot">
+        <div class="chatbot-button" id="chatbotButton">
+            <i class="fas fa-robot"></i>
+            <span class="pulse-dot"></span>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <i class="fas fa-brain"></i>
+                    <div>
+                        <h4>Elite AI Assistant</h4>
+                        <p>Online | Ready to help</p>
+                    </div>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="ai-message">
+                    <div class="ai-avatar"><i class="fas fa-robot"></i></div>
+                    <div class="message-content">
+                        <p>Hello! 👋 I'm your Elite Dispatch AI Assistant. How can I help you today?</p>
+                        <div class="quick-actions">
+                            <button onclick="askAI('load rates')">📊 Load Rates</button>
+                            <button onclick="askAI('register truck')">🚛 Register Truck</button>
+                            <button onclick="askAI('pricing')">💰 Pricing</button>
+                            <button onclick="askAI('contact support')">📞 Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Ask me anything...">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== AI LOAD RATE PREDICTOR ==================== -->
+    <section class="ai-rate-predictor">
+        <div class="container">
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <h3>AI Load Rate Predictor</h3>
+                        <p>Get real-time rate predictions based on market data</p>
+                    </div>
+                </div>
+                <div class="ai-card-body">
+                    <div class="predictor-form">
+                        <div class="form-group">
+                            <label><i class="fas fa-map-marker-alt"></i> Origin (City, State)</label>
+                            <input type="text" id="origin" placeholder="e.g., Dallas, TX">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-map-marker-alt"></i> Destination (City, State)</label>
+                            <input type="text" id="destination" placeholder="e.g., Chicago, IL">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-truck"></i> Truck Type</label>
+                            <select id="truckTypeAI">
+                                <option value="dryvan">Dry Van</option>
+                                <option value="reefer">Reefer (Refrigerated)</option>
+                                <option value="flatbed">Flatbed</option>
+                                <option value="hotshot">Hot Shot</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-ruler-combined"></i> Distance (miles)</label>
+                            <input type="number" id="distance" placeholder="e.g., 800">
+                        </div>
+                        <button class="btn-ai-predict" id="predictRateBtn">
+                            <i class="fas fa-robot"></i> AI Predict Rate
+                        </button>
+                    </div>
+                    <div class="prediction-result" id="predictionResult" style="display: none;">
+                        <div class="result-header"><i class="fas fa-chart-simple"></i><h4>🤖 AI Rate Prediction</h4></div>
+                        <div class="result-rate"><span class="label">Predicted Rate Per Mile</span><span class="value" id="predictedRate">$0.00</span></div>
+                        <div class="result-total"><span class="label">Total Load Value</span><span class="value" id="totalValue">$0</span></div>
+                        <div class="result-confidence"><i class="fas fa-chart-line"></i><span>AI Confidence: <strong id="confidenceScore">0%</strong></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== AI ROUTE OPTIMIZER ==================== -->
+    <section class="ai-route-optimizer">
+        <div class="container">
+            <div class="ai-card">
+                <div class="ai-card-header">
+                    <i class="fas fa-route"></i>
+                    <div>
+                        <h3>AI Route Optimizer</h3>
+                        <p>Smart route planning to save fuel and time</p>
+                    </div>
+                </div>
+                <div class="ai-card-body">
+                    <div class="optimizer-form">
+                        <div class="form-group"><label><i class="fas fa-flag-checkered"></i> Start Location</label><input type="text" id="startLocation" placeholder="e.g., Los Angeles, CA"></div>
+                        <div class="form-group"><label><i class="fas fa-flag-checkered"></i> End Location</label><input type="text" id="endLocation" placeholder="e.g., New York, NY"></div>
+                        <div class="form-group"><label><i class="fas fa-gas-pump"></i> Truck MPG</label><input type="number" id="mpg" placeholder="e.g., 7" value="7"></div>
+                        <div class="form-group"><label><i class="fas fa-dollar-sign"></i> Fuel Price ($/gallon)</label><input type="number" id="fuelPrice" placeholder="e.g., 4.50" value="4.50" step="0.10"></div>
+                        <button class="btn-ai-optimize" id="optimizeRouteBtn"><i class="fas fa-microchip"></i> AI Optimize Route</button>
+                    </div>
+                    <div class="optimization-result" id="optimizationResult" style="display: none;">
+                        <div class="result-card"><h4><i class="fas fa-road"></i> 🗺️ Optimized Route</h4><p id="optimizedRoute">-</p></div>
+                        <div class="result-stats">
+                            <div class="stat"><i class="fas fa-clock"></i><span>Est. Time</span><strong id="estTime">-</strong></div>
+                            <div class="stat"><i class="fas fa-gas-pump"></i><span>Fuel Cost</span><strong id="fuelCost">-</strong></div>
+                            <div class="stat"><i class="fas fa-leaf"></i><span>Fuel Saved</span><strong id="fuelSaved">-</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
