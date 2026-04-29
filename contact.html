@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Truck Dispatch Pro - Get a free quote for dispatching services. Call, email, or fill out our contact form. 24/7 support available.">
+    <meta name="keywords" content="contact truck dispatching, get quote, truck dispatch support">
+    <title>Contact Us | Truck Dispatch Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-truck-fast"></i>
+                <span>Elite<span class="highlight">Dispatch</span> Pro</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="register.html" class="nav-btn">Driver Register</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In <span class="highlight">Touch</span></h1>
+            <p>We're here 24/7 to answer your questions and provide free quotes</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-cards-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us 24/7</h3>
+                    <p class="contact-detail">+1 (555) 123-4567</p>
+                    <p class="contact-detail">+1 (800) 123-4567</p>
+                    <p class="contact-note">Toll Free</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p class="contact-detail">support@truckdispatchpro.com</p>
+                    <p class="contact-detail">sales@truckdispatchpro.com</p>
+                    <p class="contact-note">Response within 30 minutes</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p class="contact-detail">Monday - Sunday</p>
+                    <p class="contact-detail">24 Hours / 7 Days</p>
+                    <p class="contact-note">Always available</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Office Address</h3>
+                    <p class="contact-detail">123 Trucking Avenue</p>
+                    <p class="contact-detail">Dallas, TX 75201</p>
+                    <p class="contact-note">Virtual meetings available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Get a <span class="highlight">Free Quote</span></h2>
+                        <p>Fill out the form below and we'll get back to you within 30 minutes</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i> Full Name *</label>
+                                <input type="text" id="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-phone"></i> Phone Number *</label>
+                                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-envelope"></i> Email Address *</label>
+                                <input type="email" id="email" placeholder="Enter your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-truck"></i> Number of Trucks</label>
+                                <select id="trucks">
+                                    <option value="1">1 truck (Owner Operator)</option>
+                                    <option value="2-3">2-3 trucks</option>
+                                    <option value="4-5">4-5 trucks</option>
+                                    <option value="6-10">6-10 trucks</option>
+                                    <option value="10+">10+ trucks</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-route"></i> Truck Type</label>
+                                <select id="truckType">
+                                    <option value="Dry Van">Dry Van</option>
+                                    <option value="Reefer">Reefer</option>
+                                    <option value="Flatbed">Flatbed</option>
+                                    <option value="Hot Shot">Hot Shot</option>
+                                    <option value="Power Only">Power Only</option>
+                                    <option value="Box Truck">Box Truck</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-map"></i> Operating Area</label>
+                                <select id="operatingArea">
+                                    <option value="Local">Local (within 100 miles)</option>
+                                    <option value="Regional">Regional (100-500 miles)</option>
+                                    <option value="OTR">OTR (500+ miles)</option>
+                                    <option value="All">All areas</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-comment"></i> Message *</label>
+                            <textarea id="message" rows="5" placeholder="Tell us about your trucking needs, preferred lanes, or any questions..." required></textarea>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="contactTerms" required>
+                            <label>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                        
+                        <p class="form-note">
+                            <i class="fas fa-lock"></i> Your information is secure and will not be shared
+                        </p>
+                    </form>
+                    
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent successfully. We'll contact you within 30 minutes.</p>
+                        <button class="btn btn-primary" onclick="location.href='index.html'">Back to Home</button>
+                    </div>
+                </div>
+                
+                <!-- Map & Business Hours -->
+                <div class="contact-sidebar">
+                    <div class="business-hours">
+                        <h3><i class="fas fa-clock"></i> Business Hours</h3>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span>Monday - Friday</span>
+                                <strong>24/7</strong>
+                            </div>
+                            <div class="hour-item">
+                                <span>Saturday</span>
+                                <strong>24/7</strong>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sunday</span>
+                                <strong>24/7</strong>
+                            </div>
+                        </div>
+                        <p class="hours-note"><i class="fas fa-headset"></i> Emergency support available anytime</p>
+                    </div>
+                    
+                    <div class="quick-response">
+                        <h3><i class="fas fa-bolt"></i> Quick Response</h3>
+                        <div class="response-times">
+                            <div class="response-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Phone Response</strong>
+                                    <span>Within 5 minutes</span>
+                                </div>
+                            </div>
+                            <div class="response-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email Response</strong>
+                                    <span>Within 30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="response-item">
+                                <i class="fas fa-comment"></i>
+                                <div>
+                                    <strong>Quote Request</strong>
+                                    <span>Within 1 hour</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-contact">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Emergency?</h3>
+                        <p>For urgent dispatch issues, call our emergency line:</p>
+                        <a href="tel:+15551234567" class="emergency-number">+1 (555) 123-4567</a>
+                        <span class="emergency-note">Available 24/7 for active drivers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Location Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-wrapper">
+                <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
+                <div class="map-container">
+                    <!-- Google Maps Embed -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214587.6017051612!2d-96.87114589999999!3d32.8203525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974d%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="350" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map-address">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <strong>Truck Dispatch Pro</strong><br>
+                        123 Trucking Avenue, Suite 100<br>
+                        Dallas, TX 75201, United States
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Contact Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="faq-contact-wrapper">
+                <h3>Frequently Asked Questions</h3>
+                <div class="contact-faq-grid">
+                    <div class="contact-faq-item">
+                        <i class="fas fa-question"></i>
+                        <div>
+                            <strong>How fast do you respond?</strong>
+                            <p>We respond to all inquiries within 30 minutes during business hours.</p>
+                        </div>
+                    </div>
+                    <div class="contact-faq-item">
+                        <i class="fas fa-question"></i>
+                        <div>
+                            <strong>Do you offer free consultations?</strong>
+                            <p>Yes! We offer free 15-minute consultations to discuss your needs.</p>
+                        </div>
+                    </div>
+                    <div class="contact-faq-item">
+                        <i class="fas fa-question"></i>
+                        <div>
+                            <strong>Can I call after hours?</strong>
+                            <p>Absolutely! Our dispatch team works 24/7. Call anytime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-small">
+        <div class="container">
+            <div class="cta-wrapper">
+                <h3>Ready to Start Earning More?</h3>
+                <p>Join 500+ drivers who have increased their revenue by 30-50%</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="location.href='register.html'">
+                        Register Your Truck <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="location.href='tel:+15551234567'">
+                        Call Now <i class="fas fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-truck-fast"></i>
+                        <span>Truck<span>Dispatch</span> Pro</span>
+                    </div>
+                    <p>Professional truck dispatching services helping owner-operators maximize revenue with highest paying loads.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Get Started</h4>
+                    <ul>
+                        <li><a href="register.html">Driver Registration</a></li>
+                        <li><a href="contact.html">Get a Quote</a></li>
+                        <li><a href="pricing.html">View Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> support@truckdispatchpro.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Truck Dispatch Pro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
